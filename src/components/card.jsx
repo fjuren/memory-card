@@ -1,15 +1,11 @@
 import React  from "react";
 
-const Card = (prop) => {
+const Card = (props) => {
 
     return (
         <div>
-            <div id="border">
-                <div>
-                    <img src={prop.imgSrc} alt={prop.text} width="150" height="150" />
-                    <h3>{prop.text}</h3>
-                </div>
-            </div>
+            <img src={props.imgSrc} alt={props.text} width="150" height="150" onClick={() => props.cardClicked()}/>
+            <h3>{props.text}</h3>
         </div>
     );
 
