@@ -26,7 +26,24 @@ function App() {
     }
   }
 
-  // shuffle cards is next
+  // fisher-yates
+  const shuffleChars = (charArray) => {
+    let currentIndex = charArray.length,  randomIndex;
+  
+    // While there remain elements to shuffle.
+    while (currentIndex !== 0) {
+  
+      // Pick a remaining element.
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+  
+      // And swap it with the current element.
+      [charArray[currentIndex], charArray[randomIndex]] = [
+        charArray[randomIndex], charArray[currentIndex]];
+    }
+  
+    return charArray;
+  }
 
   return (
     <div>
@@ -34,7 +51,7 @@ function App() {
         <Header currentScore={currentScore} bestScore={bestScore}/>
       </div>
       <div className="Body App">
-        {charData.map((character) => {
+        {shuffleChars(charData).map((character) => {
           return (
             <div key={character.id}>
               <Card key={character.id} imgSrc={character.img} text={character.text} cardClicked={(selectedCard) => addScore(selectedCard)}/>
