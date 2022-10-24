@@ -14,15 +14,12 @@ function App() {
     if (!cardsSelected.includes(selectedCard)) {
       setCurrentScore(currentScore + 1)
       setCardsSelected(cardsSelected.concat(selectedCard))
-      if (currentScore === bestScore) {
-        setBestScore(bestScore + 1)
-      }
     } 
     else {
       // clear cardsSelected array, and add first new card
-      setCardsSelected([].concat(selectedCard))
+      setCardsSelected([])
       // reset score
-      setCurrentScore(1)
+      setCurrentScore(0)
     }
   }
 
@@ -43,14 +40,13 @@ function App() {
   }
 
   useEffect(() => {
+    if (currentScore > bestScore) {
+      setBestScore(bestScore + 1)
+    }
     return () => {
 
-      if (bestScore === 3) {
-        console.log("You win!")
-      }
-      
     }
-  }, )
+  }, [currentScore, bestScore])
 
 
   return (
