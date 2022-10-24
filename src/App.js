@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import Card from './components/Card';
 import Header from './components/Header'
@@ -29,21 +29,29 @@ function App() {
   // fisher-yates
   const shuffleChars = (charArray) => {
     let currentIndex = charArray.length,  randomIndex;
-  
-    // While there remain elements to shuffle.
+
     while (currentIndex !== 0) {
   
-      // Pick a remaining element.
       randomIndex = Math.floor(Math.random() * currentIndex);
       currentIndex--;
   
-      // And swap it with the current element.
       [charArray[currentIndex], charArray[randomIndex]] = [
         charArray[randomIndex], charArray[currentIndex]];
     }
   
     return charArray;
   }
+
+  useEffect(() => {
+    return () => {
+
+      if (bestScore === 3) {
+        console.log("You win!")
+      }
+      
+    }
+  }, )
+
 
   return (
     <div>
