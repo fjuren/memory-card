@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/memory-card/static/css/main.7251be76.css",
+    "main.js": "/memory-card/static/js/main.0a79e98e.js",
+    "static/media/bowser.png": "/memory-card/static/media/bowser.17149405d897ad8f0cdf.png",
+    "static/media/diddykong.png": "/memory-card/static/media/diddykong.912137a8e9ee6ab3457e.png",
+    "static/media/luigi.png": "/memory-card/static/media/luigi.9ab5497f3f33bc9124c4.png",
+    "static/media/mario.png": "/memory-card/static/media/mario.87920a8474e6d7ffbc9e.png",
+    "static/media/princess.png": "/memory-card/static/media/princess.1370eb91e5475ccf082c.png",
+    "static/media/donkeykong.png": "/memory-card/static/media/donkeykong.9b75a815758727abe448.png",
+    "static/media/waluigi.png": "/memory-card/static/media/waluigi.c9586cef963432379f6e.png",
+    "static/media/goomba.png": "/memory-card/static/media/goomba.eb6857ce68801d88b216.png",
+    "static/media/koopatroopa.png": "/memory-card/static/media/koopatroopa.4f6f34a1ab7d2a7126ef.png",
+    "static/media/yoshi.png": "/memory-card/static/media/yoshi.dbcb49bbace3c1033797.png",
+    "static/media/toad.png": "/memory-card/static/media/toad.cbe463ff44bc8eddad13.png",
+    "static/media/boo.png": "/memory-card/static/media/boo.20d6f5cf2dfd9960d5ec.png",
+    "index.html": "/memory-card/index.html",
+    "main.7251be76.css.map": "/memory-card/static/css/main.7251be76.css.map",
+    "main.0a79e98e.js.map": "/memory-card/static/js/main.0a79e98e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7251be76.css",
+    "static/js/main.0a79e98e.js"
+  ]
+}
